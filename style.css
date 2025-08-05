@@ -1,79 +1,73 @@
- body{
-    padding: 0;
-    margin: 0;
-    font-family: helvetica;
-    width: 100%;
+body {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  width: 100%;
 }
 
-#top-head{
-    padding: 10px;
-    z-index: 500;
-    width: 100%;
-    height: 80px;
-    background-color: grey;
-    background-repeat: repeat-x;
+#header {
+  padding: 3px;
+  width: 100%;
+  background-color: #2c2c2c;
+  background-repeat: repeat-x;
+}
+
+h1 {
+  padding: 3px;
+  text-align: center;
+  color: white;
+}
+#hero{
+  padding: 2%;
+  font-size: 20px;
+  height: 100vh;
+}
+
+.img1 {
+  display: flex;
+}
+
+#form {
+  box-shadow: 0 0 10px;
+  border-radius: 25px 25px 25px;
+  width: 30%;
+  padding: 1%;
+}
+
+input {
+  width: 50%;
+  height: 150px;
+}
+
+textarea {
+  width: 100%;
+  height: 119px;
+}
+::placeholder {
+  text-align: center;
+}
+button {
+  background-color: black;
+  color: white;
+  width: 20%;
+  height: 45px;
 }
 
 
-h2{
-    display: block;
-    margin: auto;
-    margin-top: 15px;
-    height: 70%;
-    padding-top: 15px;
-    text-align: center;
+#next {
+  display: block;
+  float: right;
+  width: 20%;
 }
-#blurry-picture{
-    
-    background: url(images/icarus-chu-dMju6KPWyBc-unsplash.jpg);
-    background-repeat: repeat-y;
+#next a{
+ text-decoration: none;
+ color: white;
 }
-#front-picture{
-    padding-top: 1px;
-    padding-bottom: 50px;
-}
-#phambii{
-    background-color: rgba(225 ,225 ,225 ,8);
-    width: 90%;
-    display: block;
-    margin: auto;
-    margin-top: 12px;
-    padding: 10px;
-}
-.img1{
-    display: flex;
-    
-    justify-content: center;
-    align-items: center;
-    
-}
-#phambii h3{
-    text-align: center;
-    color: black;
-    font-weight: 700;
-    
-}
-#phambii p{
-    font-weight: 500;
-    text-align: center;
-}
-input{
-    width:100%;
-    height: 40px;
-    margin-top:10px;
+#back{
+  width: 20%;
 }
 
-textarea{
-    width: 100%;
-    height: 119px;
-    margin-top: 10px;
+#back a{
+ text-decoration: none;
+ color: white;
 }
-button{
-    display: block;
-    background-color: green;
-    text-align: center;
-    margin-top: 10px;
-    font-weight: 600;
-    font-size: 16px;
-    width: 100%;
-}  

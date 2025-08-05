@@ -4,93 +4,117 @@
 <link rel="stylesheet" href="style.css">
     </head>
     <body>
-       <div id="top-head">
-        <h2> Comparing windows, Mac and linux</h2>
+       <div id="header">
+        <h1> Comparing windows, Mac and linux</h1>
         </div>
-        <div id="blurry-picture">
-            <div id="front-picture">
-                <div id="phambii">
-                  <h3>Directory Structure</h3>
+        <div id="hero">
+                  <h2>Directory Structure</h2>
                   <h4>Windows</h4>
                   <ul>
-                    <input type="checkbox"files in a drive-letter-based hierarchy.>
+                    <li>in a drive-letter-based hierarchy. </li>
                     <li>Uses backslashes (\) to separate folders.</li>
                     <li>The root of the system is typically C:\.</li>
                   </ul>
-macOS
-Uses a Unix-style file system with a single root (/), like Linux.</li>
-Separates directories using forward slashes (/).</li>
-Files and folders are located under directories like /Users, /Applications, etc.</li>
-Linux
-Also based on Unix principles, with a single root /.</li>
-Uses forward slashes (/) for file paths.</li>
-Directories like /home, /etc, and /var hold system and user data.</li>
-Naming Conventions
-Case Sensitivity
-Windows:
-  Not case-sensitive by default (file.txt and File.txt are the same).</li>
-macOS:
- Usually case-insensitive, but case-preserving. However, it can be configured to be case-sensitive.</li>
-Linux: 
-Case-sensitive by default (file.txt and File.txt are different files).</li>
-Naming Restrictions
-Windows: 
-Cannot use characters like \ / : * ? " < > |.</li>
-Reserved filenames like CON, PRN, and AUX are not allowed.</li>
-macOS:
- Cannot use : in file names.
-Linux: 
-Fewer restrictions. Only the / character is not allowed in file names.
-File Systems
-Windows: 
-Primarily uses NTFS (New Technology File System).
-Also supports FAT32 and exFAT, especially for USB drives.
-macOS:
- Uses APFS (Apple File System) on newer devices.
-Previously used HFS+.
-Also supports FAT32 and exFAT for compatibility.
-Linux: 
-Uses ext4 as the most common default file system.
-Also supports Btrfs, XFS, and others.
-File Allocation Table (FAT)
-FAT32 is still used today for removable media (USBs, SD cards) because it is supported across all major OSes.
-exFAT is an improvement over FAT32 and is often used on larger external drives for compatibility.
-
-
-Executable File Types
-Windows:
-.exe – Standard compiled application file.
-.bat – Batch file used for scripting command-line instructions.
-.cmd – Similar to .bat but works better with modern command-line interpreters.
-.msi – Microsoft Installer package for application setup.
-.ps1 – PowerShell script file, used with Windows PowerShell.
-macOS:
-.app – Application bundle containing all resources and binaries.
-.command – Shell script executable via double-click or Terminal.
-.sh – Standard shell script used in Unix systems.
-Executables can have no extension, especially for command-line tools.
-Linux:
-Typically has no required extension.
-Common extensions include:
-.sh – Shell script.
-.run – Self-extracting Linux program installer.
-Executability depends on file permissions, not extensions.
-Script Execution and Shell Access
-Windows:
-Uses Command Prompt (cmd.exe) and PowerShell for script execution.
-Scripts like .bat, .cmd, and .ps1 are executed using these shells.
-PowerShell provides more powerful scripting capabilities compared to Command Prompt.
-macOS:
-Uses the Terminal app to access the shell (typically zsh or bash).
-Shell scripts (.sh, .command) are executed with the bash or zsh interpreter.
-AppleScript is another option for automation.
-Linux :
-Scripts are run through the Terminal, using shells like bash, zsh, or others.
-Shell scripts are executed by giving them execute permissions (chmod +x script.sh) and running ./script.sh.
-Supports a wide variety of scripting languages including Python, Perl, etc.
-
- 
-                </div>
+                  <h4>macOS</h4>
+                  <ul>
+                    <li>Uses a Unix-style file system with a single root (/), like Linux.</li>
+                    <li>Separates directories using forward slashes (/)</li>
+                    <li>Files and folders are located under directories like /Users, /Applications, etc.</li>
+                  </ul>
+                  <h4>Linux</h4>
+                  <ul>
+                    <li>lso based on Unix principles, with a single root /.</li>
+                    <li>Uses forward slashes (/) for file paths.</li>
+                    <li>Directories like /home, /etc, and /var hold system and user data.</li>
+                  </ul>
+                  <h2>Naming Conventions</h2>
+                  <h3>Case Sensitivity</h3>
+                  <h4>Windows:</h4>
+                  <ul>
+                    <li>Not case-sensitive by default (file.txt and File.txt are the same).</li>
+                  </ul>
+                  <h4>macOS:</h4>
+                  <ul>
+                    <li>Usually case-insensitive, but case-preserving. However, it can be configured to be case-sensitive.</li>
+                  </ul>
+                  <h4>Linux:</h4>
+                  <ul>
+                    <li>Case-sensitive by default (file.txt and File.txt are different files).</li>
+                  </ul>
+                  <h3>Naming Restrictions</h3>
+                  <h4>Windows:</h4>
+                  <ul>
+                    <li>Cannot use characters like \ / : * ? " < > |.</li>
+                    <li>Reserved filenames like CON, PRN, and AUX are not allowed.</li>
+                  </ul>
+                  <h4>macOS:</h4>
+                  <ul>
+                    <li>Cannot use : in file names.</li>
+                    <li>Also supports FAT32 and exFAT, especially for USB drives.</li>
+                  </ul>
+                  <h4>macOS:</h4>
+                  <ul>
+                    <li>Uses APFS (Apple File System) on newer devices.</li>
+                    <li>Previously used HFS+.</li>
+                    <li>Also supports FAT32 and exFAT for compatibility.</li>
+                  </ul>
+                  <h4>Linux:</h4>
+                  <ul>
+                    <li>Uses ext4 as the most common default file system.</li>
+                    <li>Also supports Btrfs, XFS, and others.</li>
+                    <li>File Allocation Table (FAT)</li>
+                    <li>FAT32 is still used today for removable media (USBs, SD cards) because it is supported across all major OSes.</li>
+                    <li>exFAT is an improvement over FAT32 and is often used on larger external drives for compatibility.</li>
+                  </ul>
+                  <h2>Executable File Types</h2>
+                  <h4>Windows:</h4>
+                  <ul>
+                    <li>.exe – Standard compiled application file.</li>
+                    <li>.bat – Batch file used for scripting command-line instructions.</li>
+                    <li>.cmd – Similar to .bat but works better with modern command-line interpreters.</li>
+                    <li>.msi – Microsoft Installer package for application setup.</li>
+                    <li>.ps1 – PowerShell script file, used with Windows PowerShell.</li>
+                  </ul>
+                  <h4>macOS:</h4>
+                  <ul>
+                    <li>.app – Application bundle containing all resources and binaries.</li>
+                    <li>.command – Shell script executable via double-click or Terminal.</li>
+                    <li>.sh – Standard shell script used in Unix systems.</li>
+                    <li>Executables can have no extension, especially for command-line tools.</li>
+                  </ul>
+                  <h4>Linux:</h4>
+                  <ul>
+                    <li>Typically has no required extension.</li>
+                    <h4>Common extensions include:</h4>
+                    <li>.sh – Shell script.</li>
+                    <li>.run – Self-extracting Linux program installer.</li>
+                    <li>Executability depends on file permissions, not extensions.</li>
+                    <li>Script Execution and Shell Access</li>
+                  </ul>
+                  <h4>Windows:</h4>
+                  <ul>
+                    <li>Uses Command Prompt (cmd.exe) and PowerShell for script execution.</li>
+                    <li>Scripts like .bat, .cmd, and .ps1 are executed using these shells.</li>
+                    <li>PowerShell provides more powerful scripting capabilities compared to Command Prompt.</li>
+                  </ul>
+                  <h4>macOS:</h4>
+                  <ul>
+                    <li>Uses the Terminal app to access the shell (typically zsh or bash).</li>
+                    <li>Shell scripts (.sh, .command) are executed with the bash or zsh interpreter.</li>
+                    <li>AppleScript is another option for automation.</li>
+                  </ul>
+                  <h4>Linux :</h4>
+                  <ul>
+                    <li>Scripts are run through the Terminal, using shells like bash, zsh, or others.</li>
+                    <li>Shell scripts are executed by giving them execute permissions (chmod +x script.sh) and running ./script.sh.</li>
+                    <li>Supports a wide variety of scripting languages including Python, Perl, etc.</li>
+                  </ul>
+                  <div id="back">
+                  <button><a href="index.html">Back</button></a>
+                  </div>
+                  </div>
+                  
+                 <div id="footer"></div>
             </div>
         </div>
     </body>
